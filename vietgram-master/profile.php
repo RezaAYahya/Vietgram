@@ -63,7 +63,7 @@
                 </div>
                 <ul class="profile__stats">
                     <li class="profile__stat">
-                        <span class="stat__number">1</span> posts
+                        <span class="stat__number"><?php echo $jmlData ?></span> posts
                     </li>
                     <li class="profile__stat">
                         <span class="stat__number">1</span> followers
