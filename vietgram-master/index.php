@@ -23,7 +23,8 @@
                     <img src="images/loginLogo.png" class="login__logo" />
                     <form action="validasi_login.php" method="post" class="login__form">
                         <input type="text" name="username" placeholder="Username" required />
-                        <input type="password" name="password" placeholder="Password" required />
+                        <input type="password" name="password" placeholder="Password" id="myInput" required /> 
+                        <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password" style="float: right; margin-top: -25px;" oninput="myFunction()" onclick="myFunction()"></span>
                         <input type="submit" value="Log in" />
                     </form>
                     <span class="login__divider">or</span>
@@ -66,5 +67,16 @@
                 <span class="footer__copyright">© 2017 Vietgram</span>
             </div>
         </footer>
+        <script>
+    
+            function myFunction() {
+                var x = document.getElementById("myInput");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+        </script>
     </body>
 </html>
